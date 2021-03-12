@@ -1,13 +1,9 @@
 <template>
-  <div class="pypi my-8">
-    <div class="mb-4 h-32 w-full rounded-xl flex items-center justify-center">
-      <div class="flex items-center">
-        <h1 class="text-3xl font-medium tracking-wide mr-8">
-          PyPI 切换镜像源教程
-        </h1>
-        <img :src="LOGO.PyPI" alt="PyPI Logo" class="h-full" />
-      </div>
-    </div>
+  <div class="pypi">
+    <tutorial-title
+      title="PyPI 切换镜像源教程"
+      :src="LOGO.PyPI"
+    ></tutorial-title>
     <div
       class="flex-1 border-2 border-gray-100 shadow p-8 rounded-lg w-4/5 mx-auto"
       style="height: 450px"
@@ -29,9 +25,7 @@
           <div class="flex space-x-8">
             <div>
               <p class="mb-2 font-medium">当前网络环境</p>
-              <select
-                class="select"
-              >
+              <select class="select">
                 <option value="IPv4">IPv4</option>
                 <option value="IPv6">IPv6</option>
                 <option value="IPv4+IPv6">IPv4 + IPv6</option>
@@ -39,17 +33,13 @@
             </div>
             <div>
               <p class="mb-2 font-medium">希望使用的镜像源</p>
-              <select
-                class="w-64 select"
-              >
+              <select class="w-64 select">
                 <option value="tsinghua">清华大学 TUNA</option>
                 <option value="IPv6">IPv6</option>
                 <option value="IPv4+IPv6">IPv4 + IPv6</option>
               </select>
             </div>
-            <div
-              class="self-end btn-outline rounded-lg py-3/2"
-            >
+            <div class="self-end btn-outline rounded-lg py-3/2">
               <a href="https://tuna.moe" target="_blank"
                 >镜像源官网
                 <span class="material-icons align-baseline text-sm">
@@ -82,8 +72,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import PyPI from '../../assets/logos/pypi.svg';
+import TutorialTitle from '../../components/TutorialTitle.vue';
 
 export default defineComponent({
+  components: { TutorialTitle },
   name: 'PyPI',
   data() {
     return {

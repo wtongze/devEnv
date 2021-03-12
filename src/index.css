@@ -16,6 +16,6 @@
   }
 
   .select {
-    @apply bg-gray-100 rounded-lg border-2 border-gray-200 focus:ring-0 focus:border-gray-200 py-3/2;
+    @apply bg-gray-100 rounded-lg border-2 border-gray-100 focus:ring-0 focus:border-gray-100 py-3/2;
   }
 }

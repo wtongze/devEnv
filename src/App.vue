@@ -7,13 +7,15 @@
         </router-link>
       </div>
     </div>
-    <div class="container mx-auto flex-1">
+    <div class="container mx-auto flex-1 my-8">
       <router-view></router-view>
     </div>
     <div class="footer bg-gray-100 py-2">
-      <div class="container mx-auto flex justify-center space-x-8 select-none text-gray-400">
-        <p>京 ICP 备 00000000 号 - 0</p>
-        <p>京网安备 0000000000 号</p>
+      <div
+        class="container mx-auto flex justify-center space-x-8 select-none text-gray-400"
+      >
+        <!-- <p>京 ICP 备 00000000 号 - 0</p> -->
+        <!-- <p>京网安备 0000000000 号</p> -->
         <p>Copyright © 2020 devEnv.cn</p>
       </div>
     </div>

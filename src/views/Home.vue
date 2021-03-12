@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="mt-32">
+    <div class="mt-24">
       <h1 class="text-center text-3xl font-medium mb-2">快速查找国内镜像源</h1>
       <h2 class="text-center text-2xl text-gray-400">提升开发效率</h2>
     </div>

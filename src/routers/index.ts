@@ -10,12 +10,7 @@ const routes = [
     path: '/packages/pypi',
     name: 'PyPI',
     component: () => import('../views/packages/PyPI.vue'),
-  },
-  {
-    path: '/packages/:name',
-    name: 'Test',
-    component: () => import('../views/Test.vue'),
-  },
+  }
 ];
 
 export default createRouter({
