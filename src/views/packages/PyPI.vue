@@ -2,7 +2,8 @@
   <div class="pypi">
     <tutorial-title
       title="PyPI 切换镜像源教程"
-      :src="LOGO.PyPI"
+      :src="LOGO_PYPI"
+      alt="PyPI Logo"
     ></tutorial-title>
     <div
       class="flex-1 border-2 border-gray-100 shadow p-8 rounded-lg w-4/5 mx-auto flex flex-col"
@@ -71,7 +72,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import PyPI from '../../assets/logos/pypi.svg';
+import LOGO_PYPI from '../../assets/logos/pypi.svg';
 import TutorialTitle from '../../components/TutorialTitle.vue';
 
 export default defineComponent({
@@ -79,9 +80,7 @@ export default defineComponent({
   name: 'PyPI',
   data() {
     return {
-      LOGO: {
-        PyPI,
-      },
+      LOGO_PYPI,
       step: 1,
     };
   },

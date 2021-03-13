@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <div class="bg-gray-100 shadow py-4">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4">
         <router-link to="/">
           <span class="text-2xl font-medium">devEnv</span>
         </router-link>

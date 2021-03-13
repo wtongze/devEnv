@@ -6,6 +6,9 @@ module.exports = {
       padding: {
         '3/2': '0.375rem',
       },
+      width: {
+        68: '17rem',
+      },
     },
   },
   variants: {

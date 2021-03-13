@@ -5,7 +5,7 @@
         <h1 class="text-3xl font-medium tracking-wide mr-8">
           {{ title }}
         </h1>
-        <img v-if="src" :src="src" alt="PyPI Logo" class="h-full" />
+        <img v-if="src" :src="src" :alt="alt" class="h-full" />
       </div>
     </div>
   </div>
@@ -19,6 +19,7 @@ export default defineComponent({
   props: {
     title: String,
     src: String,
+    alt: String
   },
 });
 </script>
