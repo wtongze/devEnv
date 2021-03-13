@@ -18,4 +18,21 @@
   .select {
     @apply bg-gray-100 rounded-lg border-2 border-gray-100 focus:ring-0 focus:border-gray-100 py-3/2;
   }
+
+  .guide-card {
+    @apply flex-1 border-2 border-gray-100 shadow p-8 rounded-lg w-4/5 mx-auto flex flex-col;
+    height: 500px;
+  }
+
+  .guide-card-steps {
+    @apply flex-1;
+  }
+
+  .guide-card-control {
+    @apply mt-6 flex justify-between;
+  }
+
+  .code {
+    @apply font-mono p-4 bg-gray-50 rounded-md text-sm overflow-x-auto whitespace-nowrap;
+  }
 }

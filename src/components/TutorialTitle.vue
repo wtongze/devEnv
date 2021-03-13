@@ -1,6 +1,6 @@
 <template>
   <div class="tutorial-title">
-    <div class="mb-4 h-32 w-full rounded-xl flex items-center justify-center">
+    <div class="mb-4 h-32 w-3/4 md:w-full mx-auto rounded-xl flex items-center justify-center">
       <div class="flex items-center">
         <h1 class="text-3xl font-medium tracking-wide mr-8">
           {{ title }}
