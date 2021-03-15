@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <div class="bg-gray-100 shadow py-4">
-      <div class="container mx-auto px-4">
+      <div class="px-4 sm:px-8">
         <router-link to="/">
           <span class="text-2xl font-medium">devEnv</span>
         </router-link>
@@ -23,10 +23,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
 });
 </script>
 
