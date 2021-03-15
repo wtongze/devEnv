@@ -30,5 +30,8 @@
   },
   "lint-staged": {
     "*.{js,ts,vue,css,md}": "prettier --write"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
