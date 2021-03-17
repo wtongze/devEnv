@@ -21,7 +21,7 @@
 
   .guide-card {
     @apply flex-1 border-2 border-gray-100 shadow p-8 rounded-lg w-4/5 mx-auto flex flex-col;
-    height: 500px;
+    height: min-500px;
   }
 
   .guide-card-steps {

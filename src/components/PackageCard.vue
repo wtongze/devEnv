@@ -1,7 +1,7 @@
 <template>
-  <router-link :to="to">
+  <router-link :to="to" class="mx-4 my-2">
     <div
-      class="h-24 w-60 2xl:w-68 mx-4 my-2 rounded-lg py-4 px-8 bg-gray-50 hover:bg-gray-200 active:bg-gray-300 flex"
+      class="h-24 w-60 2xl:w-68 rounded-lg py-4 px-8 bg-gray-50 hover:bg-gray-200 active:bg-gray-300 flex"
     >
       <div class="w-5/12 flex justify-center">
         <img :src="src" :alt="alt" class="max-h-full" />

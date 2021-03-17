@@ -1,5 +1,5 @@
 <template>
-  <div class="Homebrew">
+  <div class="homebrew">
     <tutorial-title
       title="Homebrew 切换镜像源教程"
       :src="LOGO_HOMEBREW"
@@ -61,7 +61,7 @@ import TutorialTitle from '../../components/TutorialTitle.vue';
 import GuideCard from '../../components/GuideCard.vue';
 import GuideCardStep from '../../components/GuideCardStep.vue';
 import SelectMirror from '../../components/SelectMirror.vue';
-import LOGO_HOMEBREW from '../../assets/logos/homebrew.png';
+import LOGO_HOMEBREW from '../../assets/logos/homebrew.svg';
 
 export default defineComponent({
   components: { TutorialTitle, GuideCard, GuideCardStep, SelectMirror },

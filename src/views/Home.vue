@@ -22,7 +22,7 @@
         </button>
       </div>
     </div>
-    <div class="mt-6 flex justify-center flex-wrap">
+    <div class="mt-6 flex justify-center flex-wrap w-11/12 mx-auto">
       <package-card
         v-for="pkg in featured"
         :name="pkg.name"
@@ -41,8 +41,12 @@ import PackageCard from '../components/PackageCard.vue';
 
 import LOGO_PYPI from '../assets/logos/pypi.svg';
 import LOGO_NPM from '../assets/logos/npm.svg';
-import LOGO_HOMEBREW from '../assets/logos/homebrew.png';
+import LOGO_HOMEBREW from '../assets/logos/homebrew.svg';
 import LOGO_NODEJS from '../assets/logos/nodejs.svg';
+import LOGO_UBUNTU from '../assets/logos/ubuntu.svg';
+import LOGO_DEBIAN from '../assets/logos/debian.svg';
+import LOGO_CENTOS from '../assets/logos/centos.svg';
+import LOGO_ARCHLINUX from '../assets/logos/archlinux.svg';
 
 export default defineComponent({
   name: 'Home',
@@ -76,6 +80,30 @@ export default defineComponent({
           src: LOGO_NODEJS,
           alt: 'Node.js Logo',
           to: '/packages/nodejs',
+        },
+        {
+          name: 'Ubuntu',
+          src: LOGO_UBUNTU,
+          alt: 'Ubuntu Logo',
+          to: '/packages/ubuntu',
+        },
+        {
+          name: 'Debian',
+          src: LOGO_DEBIAN,
+          alt: 'Debian Logo',
+          to: '/packages/debian',
+        },
+        {
+          name: 'CentOS',
+          src: LOGO_CENTOS,
+          alt: 'CentOS Logo',
+          to: '/packages/centos',
+        },
+        {
+          name: 'Arch Linux',
+          src: LOGO_ARCHLINUX,
+          alt: 'Arch Linux Logo',
+          to: '/packages/archlinux',
         },
       ],
     };

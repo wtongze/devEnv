@@ -26,6 +26,11 @@ const routes = [
     name: 'Nodejs',
     component: () => import('../views/packages/Nodejs.vue'),
   },
+  {
+    path: '/packages/ubuntu',
+    name: 'Ubuntu',
+    component: () => import('../views/packages/Ubuntu.vue'),
+  },
 ];
 
 export default createRouter({

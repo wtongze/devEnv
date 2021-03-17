@@ -1,5 +1,5 @@
 <template>
-  <div class="Nodejs">
+  <div class="nodejs">
     <tutorial-title
       title="Node.js 切换镜像源教程"
       :src="LOGO_NODEJS"
