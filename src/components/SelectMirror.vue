@@ -1,7 +1,7 @@
 <template>
   <div class="select-mirror flex flex-wrap">
     <div class="mr-8 mb-4">
-      <p class="mb-2 font-medium">希望使用的开源软件镜像站</p>
+      <p class="mb-2 font-medium">镜像站提供方</p>
       <select class="w-auto md:w-64 select" @change="handleChange">
         <option
           v-for="(mirror, index) in mirrors"
@@ -18,7 +18,7 @@
       :href="mirrors[modelValue].website"
       target="_blank"
       class="self-end btn-outline rounded-lg py-3/2 mb-4"
-      >镜像源官网
+      >镜像站官网
       <span class="material-icons align-baseline text-sm"> open_in_new </span>
     </a>
   </div>

@@ -14,7 +14,7 @@
         <p>
           如果您觉得此网站对您有帮助的话，欢迎您在 Github 上给我们一颗 Star ！
           <a href="https://github.com/wtongze/devEnv" target="_blank">
-            <button class="ml-2 btn-outline bg-white">
+            <button class="ml-2 btn-outline bg-white rounded-md">
               立即前往
               <span class="material-icons align-baseline text-sm">
                 open_in_new
