@@ -42,7 +42,7 @@ import PackageCard from '../components/PackageCard.vue';
 import LOGO_PYPI from '../assets/logos/pypi.svg';
 import LOGO_NPM from '../assets/logos/npm.svg';
 import LOGO_HOMEBREW from '../assets/logos/homebrew.png';
-import LOGO_DART_PUB from '../assets/logos/dart.png';
+import LOGO_NODEJS from '../assets/logos/nodejs.svg';
 
 export default defineComponent({
   name: 'Home',
@@ -60,22 +60,22 @@ export default defineComponent({
           to: '/packages/pypi',
         },
         {
-          name: 'npm',
-          src: LOGO_NPM,
-          alt: 'NPM Logo',
-          to: '/packages/npm',
-        },
-        {
           name: 'Homebrew',
           src: LOGO_HOMEBREW,
           alt: 'Homebrew Logo',
           to: '/packages/homebrew',
         },
         {
-          name: 'Dart Pub',
-          src: LOGO_DART_PUB,
-          alt: 'Dart Pub Logo',
-          to: '/packages/dart_pub',
+          name: 'npm',
+          src: LOGO_NPM,
+          alt: 'NPM Logo',
+          to: '/packages/npm',
+        },
+        {
+          name: 'Node.js',
+          src: LOGO_NODEJS,
+          alt: 'Node.js Logo',
+          to: '/packages/nodejs',
         },
       ],
     };

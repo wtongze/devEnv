@@ -12,9 +12,19 @@ const routes = [
     component: () => import('../views/packages/PyPI.vue'),
   },
   {
+    path: '/packages/homebrew',
+    name: 'Homebrew',
+    component: () => import('../views/packages/Homebrew.vue'),
+  },
+  {
     path: '/packages/npm',
     name: 'NPM',
     component: () => import('../views/packages/NPM.vue'),
+  },
+  {
+    path: '/packages/nodejs',
+    name: 'Nodejs',
+    component: () => import('../views/packages/Nodejs.vue'),
   },
 ];
 

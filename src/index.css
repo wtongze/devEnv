@@ -37,6 +37,6 @@
   }
 
   .code {
-    @apply font-mono p-4 bg-gray-50 text-gray-500 rounded-md text-sm overflow-x-auto whitespace-nowrap;
+    @apply font-mono p-4 bg-gray-50 text-gray-700 rounded-md text-sm overflow-x-auto whitespace-nowrap;
   }
 }
