@@ -25,7 +25,7 @@ export default defineComponent({
   data() {
     return {
       step: 1,
-      maxStep: 1
+      maxStep: 1,
     };
   },
   mounted() {
@@ -41,7 +41,7 @@ export default defineComponent({
       if (this.step < this.maxStep) {
         this.step++;
       }
-    }
-  }
+    },
+  },
 });
 </script>

@@ -2,10 +2,7 @@
   <div class="select-mirror flex flex-wrap">
     <div class="mr-8 mb-4">
       <p class="mb-2 font-medium">希望使用的开源软件镜像站</p>
-      <select
-        class="w-auto md:w-64 select"
-        @change="$emit('update:modelValue', parseInt($event.target.value))"
-      >
+      <select class="w-auto md:w-64 select" @change="handleChange">
         <option
           v-for="(mirror, index) in mirrors"
           :key="mirror.name"
@@ -28,7 +25,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, PropType } from 'vue';
 
 interface Mirror {
   name: string;
@@ -37,11 +34,22 @@ interface Mirror {
 }
 
 export default defineComponent({
-  name: "SelectMirror",
+  name: 'SelectMirror',
   props: {
-    modelValue: Number,
-    mirrors: Array as PropType<Mirror[]>,
+    modelValue: {
+      type: Number,
+      required: true,
+    },
+    mirrors: {
+      type: Array as PropType<Mirror[]>,
+      required: true,
+    },
   },
-  emits: ["update:modelValue"],
+  emits: ['update:modelValue'],
+  methods: {
+    handleChange(event: any) {
+      this.$emit('update:modelValue', parseInt(event.target.value));
+    },
+  },
 });
 </script>

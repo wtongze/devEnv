@@ -29,7 +29,11 @@
   }
 
   .guide-card-control {
-    @apply mt-6 flex justify-between;
+    @apply mt-6 flex justify-between h-9;
+  }
+
+  .legal {
+    @apply mt-4 px-8 text-gray-400 w-4/5 mx-auto;
   }
 
   .code {
