@@ -123,11 +123,13 @@ export default defineComponent({
   computed: {
     pkgCards() {
       if (this.search) {
-        // @ts-ignore
-        return fuse
-          .search(this.search)
-          .slice(0, 8)
-          .map((i) => i.item);
+        return (
+          fuse
+            // @ts-ignore
+            .search(this.search)
+            .slice(0, 8)
+            .map((i) => i.item)
+        );
       } else {
         // @ts-ignore
         return this.all.filter((i) => this.featured.includes(i.to));
