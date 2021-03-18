@@ -45,7 +45,7 @@
       <h3 class="text-sm">法律声明</h3>
       <p class="text-xs">
         "CentOS" 及 CentOS 相关徽标是由 Red Hat, Inc.
-        持有的商标或注册商标。本网站依据合理使用原则使用其持有的商标。
+        持有的商标或注册商标。本网站依据合理使用原则使用其持有的商标。上述权利人与本网站不存在任何隶属或赞许关系。
       </p>
     </div>
   </div>
@@ -74,6 +74,11 @@ export default defineComponent({
       selectedMirror: 0,
       mirrors: [
         {
+          name: '中国科技大学',
+          website: 'https://mirrors.ustc.edu.cn',
+          link: 'https://mirrors.ustc.edu.cn',
+        },
+        {
           name: '清华大学',
           website: 'https://mirrors.tuna.tsinghua.edu.cn/',
           link: 'https://mirrors.tuna.tsinghua.edu.cn',
@@ -82,6 +87,31 @@ export default defineComponent({
           name: '北京外国语大学',
           website: 'https://mirrors.bfsu.edu.cn/',
           link: 'https://mirrors.bfsu.edu.cn',
+        },
+        {
+          name: '北京理工大学',
+          website: 'https://mirrors.bit.edu.cn/web/',
+          link: 'https://mirrors.bit.edu.cn',
+        },
+        {
+          name: '上海交通大学（思源服务器）',
+          website: 'https://mirror.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn',
+        },
+        {
+          name: '上海交通大学（致远服务器）',
+          website: 'https://mirrors.sjtug.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn',
+        },
+        {
+          name: '哈尔滨工业大学',
+          website: 'https://mirrors.hit.edu.cn/#/home',
+          link: 'https://mirrors.hit.edu.cn',
+        },
+        {
+          name: '华南农业大学',
+          website: 'https://mirrors.scau.edu.cn/',
+          link: 'https://mirrors.scau.edu.cn',
         },
       ],
     };

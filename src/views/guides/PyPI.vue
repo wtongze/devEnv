@@ -46,7 +46,7 @@
       <h3 class="text-sm">法律声明</h3>
       <p class="text-xs">
         "Python" 及 Python 相关徽标是由 Python Software Foundation
-        持有的商标或注册商标，上述权力持有人已准许本网站使用其持有的商标。
+        持有的商标或注册商标，上述权力持有人已准许本网站使用其持有的商标。上述权利人与本网站不存在任何隶属或赞许关系。
       </p>
     </div>
   </div>
@@ -78,6 +78,21 @@ export default defineComponent({
           name: '北京外国语大学',
           website: 'https://mirrors.bfsu.edu.cn/',
           link: 'https://mirrors.bfsu.edu.cn/pypi/web/simple',
+        },
+        {
+          name: '上海交通大学（思源服务器）',
+          website: 'https://mirror.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple',
+        },
+        {
+          name: '上海交通大学（致远服务器）',
+          website: 'https://mirrors.sjtug.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple',
+        },
+        {
+          name: '哈尔滨工业大学',
+          website: 'https://mirrors.hit.edu.cn/#/home',
+          link: 'https://mirrors.hit.edu.cn/pypi/web/simple',
         },
       ],
     };

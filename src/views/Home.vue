@@ -6,7 +6,7 @@
     </div>
     <div class="mt-8 flex justify-center">
       <div
-        class="rounded-lg border-2 border-gray-300 flex px-4 py-1 w-5/6 shadow"
+        class="rounded-lg border-2 border-gray-300 flex px-4 py-1 w-5/6 shadow items-center"
         style="max-width: 584px"
       >
         <input
@@ -14,17 +14,14 @@
           class="border-none focus:ring-0 w-full mr-4 -my-1 text-lg"
           v-model="search"
         />
-        <button
-          class="focus:outline-none rounded px-4 text-md bg-gray-200 hover:bg-gray-300 active:bg-gray-400"
-          style="word-break: keep-all"
-        >
-          搜索
-        </button>
+        <div>
+          <span class="material-icons text-gray-400">search</span>
+        </div>
       </div>
     </div>
     <div class="mt-6 flex justify-center flex-wrap w-11/12 mx-auto">
       <package-card
-        v-for="pkg in featured"
+        v-for="pkg in pkgCards"
         :name="pkg.name"
         :src="pkg.src"
         :alt="pkg.alt"
@@ -37,6 +34,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Fuse from 'fuse.js';
 import PackageCard from '../components/PackageCard.vue';
 
 import LOGO_PYPI from '../assets/logos/pypi.svg';
@@ -48,6 +46,58 @@ import LOGO_DEBIAN from '../assets/logos/debian.svg';
 import LOGO_CENTOS from '../assets/logos/centos.svg';
 import LOGO_ARCHLINUX from '../assets/logos/archlinux.svg';
 
+const all = [
+  {
+    name: 'PyPI',
+    src: LOGO_PYPI,
+    alt: 'PyPI Logo',
+    to: 'pypi',
+  },
+  {
+    name: 'Homebrew',
+    src: LOGO_HOMEBREW,
+    alt: 'Homebrew Logo',
+    to: 'homebrew',
+  },
+  {
+    name: 'npm',
+    src: LOGO_NPM,
+    alt: 'NPM Logo',
+    to: 'npm',
+  },
+  {
+    name: 'Node.js',
+    src: LOGO_NODEJS,
+    alt: 'Node.js Logo',
+    to: 'nodejs',
+  },
+  {
+    name: 'Ubuntu',
+    src: LOGO_UBUNTU,
+    alt: 'Ubuntu Logo',
+    to: 'ubuntu',
+  },
+  {
+    name: 'Debian',
+    src: LOGO_DEBIAN,
+    alt: 'Debian Logo',
+    to: 'debian',
+  },
+  {
+    name: 'CentOS',
+    src: LOGO_CENTOS,
+    alt: 'CentOS Logo',
+    to: 'centos',
+  },
+  {
+    name: 'Arch Linux',
+    src: LOGO_ARCHLINUX,
+    alt: 'Arch Linux Logo',
+    to: 'archlinux',
+  },
+];
+const fuse = new Fuse(all, { keys: ['name'] });
+
 export default defineComponent({
   name: 'Home',
   components: {
@@ -56,57 +106,33 @@ export default defineComponent({
   data() {
     return {
       search: '',
+      fuse,
       featured: [
-        {
-          name: 'PyPI',
-          src: LOGO_PYPI,
-          alt: 'PyPI Logo',
-          to: 'pypi',
-        },
-        {
-          name: 'Homebrew',
-          src: LOGO_HOMEBREW,
-          alt: 'Homebrew Logo',
-          to: 'homebrew',
-        },
-        {
-          name: 'npm',
-          src: LOGO_NPM,
-          alt: 'NPM Logo',
-          to: 'npm',
-        },
-        {
-          name: 'Node.js',
-          src: LOGO_NODEJS,
-          alt: 'Node.js Logo',
-          to: 'nodejs',
-        },
-        {
-          name: 'Ubuntu',
-          src: LOGO_UBUNTU,
-          alt: 'Ubuntu Logo',
-          to: 'ubuntu',
-        },
-        {
-          name: 'Debian',
-          src: LOGO_DEBIAN,
-          alt: 'Debian Logo',
-          to: 'debian',
-        },
-        {
-          name: 'CentOS',
-          src: LOGO_CENTOS,
-          alt: 'CentOS Logo',
-          to: 'centos',
-        },
-        {
-          name: 'Arch Linux',
-          src: LOGO_ARCHLINUX,
-          alt: 'Arch Linux Logo',
-          to: 'archlinux',
-        },
+        'pypi',
+        'homebrew',
+        'npm',
+        'nodejs',
+        'ubuntu',
+        'debian',
+        'centos',
+        'archlinux',
       ],
+      all,
     };
+  },
+  computed: {
+    pkgCards() {
+      if (this.search) {
+        // @ts-ignore
+        return fuse
+          .search(this.search)
+          .slice(0, 8)
+          .map((i) => i.item);
+      } else {
+        // @ts-ignore
+        return this.all.filter((i) => this.featured.includes(i.to));
+      }
+    },
   },
 });
 </script>

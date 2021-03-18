@@ -49,7 +49,8 @@
     <div class="legal">
       <h3 class="text-sm">法律声明</h3>
       <p class="text-xs">
-        Homebrew 相关徽标是由 Max Howell 以 MIT 协议许可本站使用的。
+        Homebrew 相关徽标是由 Max Howell 以 MIT
+        协议许可本站使用的。上述权利人与本网站不存在任何隶属或赞许关系。
       </p>
     </div>
   </div>
@@ -86,6 +87,21 @@ export default defineComponent({
           name: '北京外国语大学',
           website: 'https://mirrors.bfsu.edu.cn/',
           link: 'https://mirrors.bfsu.edu.cn/homebrew-bottles',
+        },
+        {
+          name: '上海交通大学（思源服务器）',
+          website: 'https://mirror.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn/homebrew-bottles',
+        },
+        {
+          name: '上海交通大学（致远服务器）',
+          website: 'https://mirrors.sjtug.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn/homebrew-bottles',
+        },
+        {
+          name: '哈尔滨工业大学',
+          website: 'https://mirrors.hit.edu.cn/#/home',
+          link: 'https://mirrors.hit.edu.cn/homebrew-bottles',
         },
       ],
     };

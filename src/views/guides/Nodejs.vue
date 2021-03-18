@@ -50,7 +50,7 @@
       <h3 class="text-sm">法律声明</h3>
       <p class="text-xs">
         "Node.js" 及 Node.js 相关徽标是由 OpenJS Fundation
-        持有的商标或注册商标，上述权力持有人已准许本网站使用其持有的商标。
+        持有的商标或注册商标，上述权力持有人已准许本网站使用其持有的商标。上述权利人与本网站不存在任何隶属或赞许关系。
       </p>
     </div>
   </div>
@@ -87,6 +87,16 @@ export default defineComponent({
           name: '北京外国语大学',
           website: 'https://mirrors.bfsu.edu.cn/',
           link: 'https://mirrors.bfsu.edu.cn/nodejs-release/',
+        },
+        {
+          name: '上海交通大学（思源服务器）',
+          website: 'https://mirror.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn/nodejs-release/',
+        },
+        {
+          name: '上海交通大学（致远服务器）',
+          website: 'https://mirrors.sjtug.sjtu.edu.cn/',
+          link: 'https://mirrors.sjtug.sjtu.edu.cn/nodejs-release/',
         },
       ],
     };
