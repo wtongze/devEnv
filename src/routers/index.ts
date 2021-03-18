@@ -7,29 +7,44 @@ const routes = [
     component: () => import('../views/Home.vue'),
   },
   {
-    path: '/packages/pypi',
+    path: '/guides/pypi',
     name: 'PyPI',
-    component: () => import('../views/packages/PyPI.vue'),
+    component: () => import('../views/guides/PyPI.vue'),
   },
   {
-    path: '/packages/homebrew',
+    path: '/guides/homebrew',
     name: 'Homebrew',
-    component: () => import('../views/packages/Homebrew.vue'),
+    component: () => import('../views/guides/Homebrew.vue'),
   },
   {
-    path: '/packages/npm',
+    path: '/guides/npm',
     name: 'NPM',
-    component: () => import('../views/packages/NPM.vue'),
+    component: () => import('../views/guides/NPM.vue'),
   },
   {
-    path: '/packages/nodejs',
+    path: '/guides/nodejs',
     name: 'Nodejs',
-    component: () => import('../views/packages/Nodejs.vue'),
+    component: () => import('../views/guides/Nodejs.vue'),
   },
   {
-    path: '/packages/ubuntu',
+    path: '/guides/ubuntu',
     name: 'Ubuntu',
-    component: () => import('../views/packages/Ubuntu.vue'),
+    component: () => import('../views/guides/Ubuntu.vue'),
+  },
+  {
+    path: '/guides/debian',
+    name: 'Debian',
+    component: () => import('../views/guides/Debian.vue'),
+  },
+  {
+    path: '/guides/centos',
+    name: 'Centos',
+    component: () => import('../views/guides/Centos.vue'),
+  },
+  {
+    path: '/guides/archlinux',
+    name: 'Archlinux',
+    component: () => import('../views/guides/Archlinux.vue'),
   },
 ];
 

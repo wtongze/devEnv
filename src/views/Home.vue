@@ -28,7 +28,7 @@
         :name="pkg.name"
         :src="pkg.src"
         :alt="pkg.alt"
-        :to="pkg.to"
+        :to="'/guides/' + pkg.to"
         :key="pkg.name"
       ></package-card>
     </div>
@@ -61,49 +61,49 @@ export default defineComponent({
           name: 'PyPI',
           src: LOGO_PYPI,
           alt: 'PyPI Logo',
-          to: '/packages/pypi',
+          to: 'pypi',
         },
         {
           name: 'Homebrew',
           src: LOGO_HOMEBREW,
           alt: 'Homebrew Logo',
-          to: '/packages/homebrew',
+          to: 'homebrew',
         },
         {
           name: 'npm',
           src: LOGO_NPM,
           alt: 'NPM Logo',
-          to: '/packages/npm',
+          to: 'npm',
         },
         {
           name: 'Node.js',
           src: LOGO_NODEJS,
           alt: 'Node.js Logo',
-          to: '/packages/nodejs',
+          to: 'nodejs',
         },
         {
           name: 'Ubuntu',
           src: LOGO_UBUNTU,
           alt: 'Ubuntu Logo',
-          to: '/packages/ubuntu',
+          to: 'ubuntu',
         },
         {
           name: 'Debian',
           src: LOGO_DEBIAN,
           alt: 'Debian Logo',
-          to: '/packages/debian',
+          to: 'debian',
         },
         {
           name: 'CentOS',
           src: LOGO_CENTOS,
           alt: 'CentOS Logo',
-          to: '/packages/centos',
+          to: 'centos',
         },
         {
           name: 'Arch Linux',
           src: LOGO_ARCHLINUX,
           alt: 'Arch Linux Logo',
-          to: '/packages/archlinux',
+          to: 'archlinux',
         },
       ],
     };

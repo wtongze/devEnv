@@ -8,7 +8,7 @@
     <guide-card>
       <guide-card-step :step="1">
         <p class="text-gray-500 mb-4">
-          注：此教程目前只包括关于在 x64 架构的 Ubuntu 上使用 apt
+          注：此教程目前只包括关于在 x86 架构的 Ubuntu 上使用 apt
           软件包管理器的信息。
         </p>
         <p class="mb-4">请填写以下信息：</p>

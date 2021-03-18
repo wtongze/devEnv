@@ -45,3 +45,34 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.guide-card {
+  flex: 1 1 0%;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.guide-card-steps {
+  flex: 1 1 0%;
+}
+
+.guide-card-control {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+}
+</style>
